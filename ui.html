@@ -1,0 +1,248 @@
+<html>
+
+<head>
+    <title>UI Sample</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='initial-scale=1.0'>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <style>
+        body {
+            background-color: transparent;
+        }
+        
+        * {
+            opacity: 0.999;
+        }
+        
+        .angler {
+            display: inline-block;
+        }
+        
+        .btn {
+            border: 0 none;
+            border-radius: 2px;
+            color: rgba(255, 255, 255, 0.84);
+            cursor: pointer;
+            margin: 10px 1px;
+            outline: medium none !important;
+            padding: 8px 30px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            -moz-user-select: none;
+            background-image: none;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857;
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+        
+        .btn-1 {
+            background-color: #009688;
+            color: rgba(255, 255, 255, 0.84);
+        }
+        
+        .btn-2 {
+            background-color: #4caf50;
+            color: rgba(255, 255, 255, 0.84);
+        }
+        
+        .btn-3 {
+            background-color: #03a9f4;
+            color: rgba(255, 255, 255, 0.84);
+        }
+        
+        .btn-4 {
+            background-color: #ff5722;
+            color: rgba(255, 255, 255, 0.84);
+        }
+        
+        .btn-5 {
+            background-color: #f44336;
+            color: rgba(255, 255, 255, 0.84);
+        }
+    </style>
+
+</head>
+
+<body>
+    <p class="bs-component">
+        <a class="btn btn-1">1</a>
+        <a class="btn btn-2">2</a>
+        <a class="btn btn-3">3</a>
+        <a class="btn btn-4">4</a>
+        <a class="btn btn-5">5</a>
+    </p>
+
+    <div class="angleInput">
+        <svg class="angler" width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+            <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+            <defs>
+                <radialGradient spreadMethod="pad" id="svg_10">
+                    <stop offset="0.90887" stop-opacity="0.99609" stop-color="#e1e1e1" />
+                    <stop offset="1" stop-opacity="0.99609" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_11">
+                    <stop offset="0.81122" stop-opacity="0.99609" stop-color="#e1e1e1" />
+                    <stop offset="1" stop-opacity="0.99609" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_12">
+                    <stop offset="0.76434" stop-opacity="0.99609" stop-color="#e1e1e1" />
+                    <stop offset="0.92059" stop-opacity="0.99609" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_13">
+                    <stop offset="0.81903" stop-opacity="0.99609" stop-color="#e1e1e1" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_14">
+                    <stop offset="0.81903" stop-opacity="0.99609" stop-color="#e1e1e1" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_16">
+                    <stop offset="0.00262" stop-opacity="0.99219" stop-color="#e1e1e1" />
+                    <stop offset="1" stop-opacity="0.01172" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_18">
+                    <stop offset="0" stop-opacity="0.99219" stop-color="#adadad" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_19">
+                    <stop offset="0" stop-opacity="0.98828" stop-color="#777777" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_20">
+                    <stop offset="0" stop-opacity="0.98438" stop-color="#b2b2b2" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_21">
+                    <stop offset="0" stop-opacity="0.98047" stop-color="#cccccc" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_22">
+                    <stop offset="0.81122" stop-opacity="0.98047" stop-color="#cccccc" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_24">
+                    <stop offset="0.37372" stop-opacity="0.97656" stop-color="#b7b7b7" />
+                    <stop offset="0.70966" stop-opacity="0.03516" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_25">
+                    <stop offset="0" stop-opacity="0.97656" stop-color="#b7b7b7" />
+                    <stop offset="0.70966" stop-opacity="0.03516" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_26">
+                    <stop offset="0.77606" stop-opacity="0.98047" stop-color="#cccccc" />
+                    <stop offset="0.93622" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_27">
+                    <stop offset="0.83856" stop-opacity="0.98047" stop-color="#cccccc" />
+                    <stop offset="0.95184" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_28">
+                    <stop offset="0.86591" stop-opacity="0.98047" stop-color="#cccccc" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_29">
+                    <stop offset="0.81903" stop-opacity="0.98047" stop-color="#cccccc" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_30">
+                    <stop offset="0.81903" stop-opacity="0.97656" stop-color="#dbdbdb" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_31">
+                    <stop offset="0.81903" stop-opacity="0.97266" stop-color="#e5e5e5" />
+                    <stop offset="1" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+                <radialGradient r="0.5" cy="0.5" cx="0.5" spreadMethod="pad" id="svg_32">
+                    <stop offset="0.81903" stop-opacity="0.97266" stop-color="#e5e5e5" />
+                    <stop offset="0.91278" stop-opacity="0.99219" stop-color="#ffffff" />
+                </radialGradient>
+            </defs>
+            <g>
+                <title>Layer 1</title>
+                <circle id="svg_9" stroke-width="2" stroke="#727272" r="22.07772" cy="25" cx="25" fill="url(#svg_32)" />
+                <g id="svg_17">
+                    <rect stroke="#727272" id="svg_4" height="18.75" width="1.15" y="5.475" x="24.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#727272" />
+                    <rect stroke="#727272" id="svg_8" height="2.8" width="3.1" y="23.5" x="23.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#727272" />
+                </g>
+            </g>
+        </svg>
+        <div class="text"></div>
+    </div>
+
+
+    <script>
+        $("a.btn").click(function() {
+			var rgb = $(this).css('background-color').match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+            if ("vvvv" in window) vvvv.color(rgb[1]/255,rgb[2]/255,rgb[3]/255); // vvvv callback
+        });
+
+
+        $(".angleInput").each(function() {
+            var container = $(this),
+                body = $(document),
+                angler = container.find(".angler"),
+                text = container.find(".text");
+
+            angler.on("mousedown touchstart", mouseDown);
+            body.on("mouseup touchend", mouseUp);
+
+            function setAngle(value) {
+                text.html("angle: " + value);
+                angler.css("transform", "rotate(" + value + "deg)");
+            }
+
+            function mouseDown(event) {
+                body.on("mousemove.angleInput", handleMove);
+                body.on("touchmove.angleInput", handleMove);
+                handleMove(event);
+                event.preventDefault();
+            }
+
+            function mouseUp(event) {
+                body.off("mousemove.angleInput", handleMove);
+                body.off("touchmove.angleInput", handleMove);
+            }
+
+            function handleMove(event) {
+                var mouseX = event.pageX;
+                var mouseY = event.pageY;
+
+                setAngle(0);
+                var ofs = angler.offset();
+                ofs.left += angler.height() / 2;
+                ofs.top += angler.width() / 2;
+
+                var x = mouseX - ofs.left;
+                var y = mouseY - ofs.top;
+
+                var angle = Math.atan2(x, y) * 180 / Math.PI;
+                angle = 180 - angle;
+                // strip decimal, go between 0-360
+                angle = ((angle + 360) | 0) % 360;
+                setAngle(angle);
+
+                if ("vvvv" in window) vvvv.angle(angle); // vvvv callback
+            }
+
+            
+            setAngle(0);
+        });
+		
+		function init()
+		{
+			if ("vvvv" in window) {
+				vvvv.angle(0); // vvvv callback
+				vvvv.color(0.5,0.5,0.5);
+				return true;
+			}
+		}
+    </script>
+
+</body>
+
+</html>
