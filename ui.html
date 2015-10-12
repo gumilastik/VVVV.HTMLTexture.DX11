@@ -10,10 +10,6 @@
             background-color: transparent;
         }
         
-        * {
-            opacity: 0.999;
-        }
-        
         .angler {
             display: inline-block;
         }
@@ -177,8 +173,8 @@
 
     <script>
         $("a.btn").click(function() {
-			var rgb = $(this).css('background-color').match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-            if ("vvvv" in window) vvvv.color(rgb[1]/255,rgb[2]/255,rgb[3]/255); // vvvv callback
+            var rgb = $(this).css('background-color').match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+            if ("vvvv" in window) vvvv.color(rgb[1] / 255, rgb[2] / 255, rgb[3] / 255); // vvvv callback
         });
 
 
@@ -229,18 +225,17 @@
                 if ("vvvv" in window) vvvv.angle(angle); // vvvv callback
             }
 
-            
+
             setAngle(0);
         });
-		
-		function init()
-		{
-			if ("vvvv" in window) {
-				vvvv.angle(0); // vvvv callback
-				vvvv.color(0.5,0.5,0.5);
-				return true;
-			}
-		}
+
+        function init() {
+            if ("vvvv" in window) {
+                vvvv.angle(0); // vvvv callback
+                vvvv.color(0.5, 0.5, 0.5);
+                return true;
+            }
+        }
     </script>
 
 </body>
