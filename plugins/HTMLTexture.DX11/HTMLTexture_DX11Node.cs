@@ -228,7 +228,7 @@ namespace VVVV.DX11.Nodes
         }
     }
 
-    public abstract class HTMLTextureNode : IDX11ResourceProvider, IDisposable
+    public abstract class HTMLTextureNode : IDX11ResourceHost, IDisposable
     {
         public static Dictionary<int, HTMLTextureNode> nodes = new Dictionary<int, HTMLTextureNode>();
 
@@ -1209,7 +1209,7 @@ namespace VVVV.DX11.Nodes
             }
         }
 
-        public void Update(IPluginIO pin, DX11RenderContext context)
+        public void Update(DX11RenderContext context)
         {
 
             if ((isImageReady && invalidate) || !this.FTextureOutput[0].Contains(context))
@@ -1236,7 +1236,7 @@ namespace VVVV.DX11.Nodes
             }
         }
 
-        public void Destroy(IPluginIO pin, FeralTic.DX11.DX11RenderContext context, bool force)
+        public void Destroy(FeralTic.DX11.DX11RenderContext context, bool force)
         {
             this.FTextureOutput[0].Dispose(context);
         }
