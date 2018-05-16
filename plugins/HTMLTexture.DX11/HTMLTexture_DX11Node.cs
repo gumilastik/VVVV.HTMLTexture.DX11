@@ -299,8 +299,8 @@ namespace VVVV.DX11.Nodes
         [Input("Execute", IsBang = true)]
         public ISpread<bool> FExecuteIn;
 
-        [Input("Evaluate", IsBang = true)]
-        public ISpread<bool> FEvaluateIn;
+        [Input("Evaluate JavaScript", IsBang = true)]
+        public ISpread<bool> FEvaluateJavaScriptIn;
 
         [Input("Show DevTools", IsBang = true)]
         public IDiffSpread<bool> FShowDevToolsIn;
@@ -796,7 +796,7 @@ namespace VVVV.DX11.Nodes
                     ExecuteJavascript(FJavaScriptIn[0]);
                 }
 
-                if (FEvaluateIn[0])
+                if (FEvaluateJavaScriptIn[0])
                 {
                     EvaluateJavascript(FJavaScriptIn[0], (value, exception) =>
                     {
